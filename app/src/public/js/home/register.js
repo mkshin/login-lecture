@@ -1,19 +1,22 @@
 "use strict";
 
 const id = document.querySelector("#id"),
-    name1 = document.querySelector("#name"),
+    name = document.querySelector("#name"),
     pasword = document.querySelector("#pasword"),
     confirmPasword = document.querySelector("#confirm-pasword"),
     registerBtn = document.querySelector("#button");
-  console.log("hello register");
+
   registerBtn.addEventListener("click", register);
 
   function register() {
+    if (!id.value) return alert("아이디를 입력해주십시오.");
+    if (pasword.value !== confirmPasword.value) 
+        return alert("비밀번호가 일치하지 않습니다.");
+
     const req = {
         id: id.value,
-        name: name1.value,
+        name: name.value,
         pasword: pasword.value,
-        confirmPasword: confirmPasword.value,
     };
 
     fetch("/register", {
