@@ -1,7 +1,7 @@
 "use strict";
 
 const id = document.querySelector("#id"),
-    name = document.querySelector("#name"),
+    name1 = document.querySelector("#name"),
     pasword = document.querySelector("#pasword"),
     confirmPasword = document.querySelector("#confirm-pasword"),
     registerBtn = document.querySelector("#button");
@@ -15,7 +15,7 @@ const id = document.querySelector("#id"),
 
     const req = {
         id: id.value,
-        name: name.value,
+        name: name1.value,
         pasword: pasword.value,
     };
 
