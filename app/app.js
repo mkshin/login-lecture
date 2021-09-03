@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 app.use(morgan("dev"));
 app.use(morgan("common", { stream: accessLogStream }));
-app.use(morgan("tiny", { stream: logger.stream }));
+//app.use(morgan("tiny", { stream: logger.stream }));
 
 app.use("/", home); // use => 미들웨어 등록해 주는 메서드
 
