@@ -105,7 +105,3 @@ dist
 
 # .vscode
 .vscode
-
-# db.js
-**db.js
-app/src/config/db.js
