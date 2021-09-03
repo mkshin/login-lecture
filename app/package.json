@@ -16,7 +16,8 @@
     "init": "^0.1.2",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
-    "vim": "^0.1.0"
+    "vim": "^0.1.0",
+    "winston": "^3.3.3"
   },
   "devDependencies": {},
   "scripts": {

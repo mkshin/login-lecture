@@ -11,6 +11,9 @@ const app = express();
 dotenv.config();
 
 const accessLogStream = require("./src/config/log");
+const logger = require("./src/config/logger");
+//logger.log("info", "Hello 개발자님들.");
+//logger.error("Hello 개발자님들.");
 
 // 라우팅
 const home = require("./src/routes/home");
